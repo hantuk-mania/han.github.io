@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Babe</title>
+    <link rel="stylesheet" href="aldm.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Tambahkan elemen baru untuk gambar cewek -->
+    <div class="center-logo" id="centerLogo"></div>
+    
+    <!-- Pesan pertama (Halo) -->
+    <div class="message" id="messageStep1">
+        <p>👋 Halo, Aldina!</p>
+    </div>
+    <!-- Pesan kedua (Maaf) -->
+    <div class="message" id="messageStep2">
+        <p>😿 Maaf banget, aku bener-bener menyesal mikir kamu bakal kirim VN Azril ke grup 😿</p>
+    </div>
+    <!-- Pesan ketiga (Permintaan Maaf Lanjut) -->
+    <div class="message" id="messageStep3">
+        <p>Semoga kamu bisa maafin aku yaa, kalo kamu maafin aku kamu telfon aku ya nanti mlm biar aku tw kamu maafin aku. 😸💖</p>
+    </div>
+</div>
+
+<script>
+    window.onload = () => {
+        // Hilangkan gambar cewek setelah 2 detik
+        setTimeout(() => {
+            document.getElementById('centerLogo').classList.add('fadeOut');
+        }, 2000);
+
+        // Munculkan pesan pertama setelah 3 detik
+        setTimeout(() => {
+            document.getElementById('messageStep1').classList.add('fadeIn');
+        }, 3000);
+
+        // Munculkan pesan kedua setelah 6 detik
+        setTimeout(() => {
+            document.getElementById('messageStep2').classList.add('fadeIn');
+        }, 6000);
+
+        // Munculkan pesan ketiga setelah 9 detik
+        setTimeout(() => {
+            document.getElementById('messageStep3').classList.add('fadeIn');
+        }, 9000);
+    };
+</script>
+
+</body>
+</html>
